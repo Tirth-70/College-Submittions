@@ -1,0 +1,28 @@
+
+
+# Quiz program in C
+
+This is a simple quiz program written in C programming language. This program allows users to create their own quiz and take a quiz as well. The program uses the `struct` data type to store the quiz questions and options. 
+
+## Features
+* Users can create a quiz by entering the number of questions and then inputting the questions and answer options.
+* The program allows users to take the quiz they have created.
+* The quiz contains multiple-choice questions with four options, and each question carries 5 points.
+* The program calculates the total score and displays it at the end of the quiz.
+* There is no negative marking for wrong answers.
+
+## How to use
+1. Clone the repository or download the zip file.
+2. Open the terminal or command prompt and navigate to the directory where the program is saved.
+3. Compile the program using the following command:
+
+   ```gcc quiz.c -o quiz```
+
+4. Run the program by executing the following command:
+
+   ```./quiz```
+
+5. Follow the instructions displayed on the screen to create and take the quiz.
+
+## Note
+This program was tested on a Linux system using GCC compiler. Some modifications may be required to run the program on Windows or other operating systems.

@@ -1,0 +1,25 @@
+
+
+# Binary Tree Implementation in C
+
+This C program demonstrates the implementation of a binary tree data structure. It allows the user to input the elements of the tree and displays the tree in a 2D format tilted towards the left. Additionally, it also displays the height of the binary tree and traverses the tree in pre-order, in-order, and post-order.
+
+## Code Explanation
+
+The code begins by defining a structure for a node of the binary tree, which consists of a data element and two pointers pointing to the left and right child nodes. 
+
+A `create()` function is defined to create the binary tree, which prompts the user to enter the data element of the node. If the user enters -1, it returns a NULL value. The function then recursively creates the left and right child nodes of the current node until the user enters -1.
+
+A `print2u()` function is defined to print the binary tree in 2D. This function recursively traverses the right subtree, prints the current node, and recursively traverses the left subtree. It also takes the argument space to determine the spacing between each node while printing.
+
+A `print2D()` function is defined to act as a wrapper function over `print2u()`.
+
+Three traversal functions - `printPreorder()`, `printInorder()`, and `printPostorder()` - are defined to traverse the binary tree in pre-order, in-order, and post-order respectively.
+
+An `height()` function is defined to calculate the height of the binary tree recursively. 
+
+In the main function, the program prompts the user to enter the root node of the binary tree and creates the binary tree using the `create()` function. The program then displays the binary tree in a 2D format tilted towards the left using the `print2D()` function. The height of the binary tree is then calculated using the `height()` function. Finally, the program traverses the binary tree in pre-order, in-order, and post-order using the respective traversal functions. 
+
+## How to Run the Code
+
+To run this program, save the code in a file with a ".c" extension and compile it using a C compiler. Then, execute the compiled binary to run the program. The program will prompt the user to input the elements of the binary tree, which will be displayed in a 2D format tilted towards the left. The program will also display the height of the binary tree and traverse the tree in pre-order, in-order, and post-order.

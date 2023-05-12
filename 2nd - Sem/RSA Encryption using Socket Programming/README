@@ -1,0 +1,56 @@
+
+
+# RSA Encryption using Socket Programming
+
+This program is a simple implementation of RSA encryption using socket programming in C. RSA is a widely used encryption algorithm that allows secure communication over open networks. In this program, two parties establish a connection using socket programming and then use the RSA algorithm to encrypt and send messages securely.
+
+## Requirements
+
+- C compiler (gcc recommended)
+- Socket library
+- Internet connection (for establishing socket connection)
+
+## Usage
+
+1. Compile the code using a C compiler (gcc recommended).
+
+   ```
+   gcc -o server server.c
+   ```
+
+2. Run the compiled file on the server-side.
+
+   ```
+   ./server
+   ```
+
+3. Run the compiled file on the client-side.
+
+   ```
+   ./client
+   ```
+
+4. Follow the instructions displayed on the screen.
+
+5. The encrypted message will be displayed on the server-side.
+
+## Program Flow
+
+1. The server creates a socket and listens for incoming connections.
+
+2. The client creates a socket and connects to the server.
+
+3. The server and the client exchange public keys using the RSA algorithm.
+
+4. The client sends a message to the server.
+
+5. The server encrypts the message using the private key and sends it back to the client.
+
+## Limitations
+
+This program is a simple implementation of RSA encryption and is not suitable for use in production environments. The program does not provide any form of authentication or verification, and the keys are generated using random numbers. 
+
+## References
+
+- [RSA algorithm](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+- [Socket programming in C](https://www.geeksforgeeks.org/socket-programming-cc/)

@@ -1,0 +1,47 @@
+
+
+# Activity Selection System
+
+This is a C program for an activity selection system, which allows the user to insert activities, delete activities, display all activities, and display the best activities to be selected.
+
+## Prerequisites
+
+To run this program, you need to have a C compiler installed on your system. 
+
+## How to Run
+
+To run this program, follow these steps:
+
+1. Open a terminal window.
+2. Navigate to the directory where the program is located.
+3. Type the following command to compile the program: `gcc activitySelection.c -o activitySelection`
+4. Type the following command to run the program: `./activitySelection`
+5. Follow the on-screen instructions to use the program.
+
+## How to Use
+
+When the program is run, it displays a menu of options:
+
+1. Insert the activity.
+2. Delete an Activity.
+3. Display all Activity.
+4. Display Best Activities to be selected.
+5. Exit the system.
+
+To insert an activity, select option 1 and enter the name of the activity, start time, and finish time.
+
+To delete an activity, select option 2 and enter the index of the activity to be deleted.
+
+To display all activities, select option 3.
+
+To display the best activities to be selected, select option 4.
+
+To exit the system, select option 5.
+
+## Program Details
+
+This program uses a linked list data structure to store the activities. Each activity is represented as a node in the linked list. The nodes contain information about the activity, such as its name, start time, finish time, and serial number.
+
+The program allows the user to insert activities into the linked list in sorted order based on the finish time. It also allows the user to delete activities by their serial number.
+
+The program uses the activity selection algorithm to find the best activities to be selected. The algorithm works by selecting activities in order of their finish time, starting with the activity that finishes first. For each activity, the program checks if it overlaps with the previously selected activity. If it doesn't overlap, it is added to the list of selected activities.

@@ -1,0 +1,27 @@
+* Explanation
+
+-   The given code is an implementation of the Activity Selection Problem in C using a linked list. The program provides options to the user to insert an activity, delete an activity, display all activities, and display the best activities to be selected. 
+
+-   The Activity Selection Problem is a classic optimization problem that involves selecting the maximum number of activities that can be performed by a single person or a machine, given a set of activities with their respective start and finish times. The goal is to select a subset of non-overlapping activities that maximize the total number of activities performed.
+
+-   The program uses a linked list to store the activities, where each node of the list represents an activity. Each node has four fields - activity name, start time, finish time, and serial number. The serial number is used to keep track of the order in which activities are inserted, deleted or displayed.
+
+-   The program starts by declaring a struct node that represents a node of the linked list. It also declares two pointers, head, and head1, to represent the head nodes of the original list and the copied list, respectively. 
+
+* The program provides the following functions:
+
+- insert(): This function inserts a new activity into the linked list in a sorted order based on the finish time of the activities. It takes three arguments - activity name, start time, and finish time. The function creates a new node, copies the data into the node, and then inserts the node into the list.
+
+- delete(): This function deletes an activity from the linked list based on the serial number of the activity. The function takes two arguments - the serial number of the activity to be deleted and the head of the list. The function traverses the list to find the node with the given serial number and then deletes it.
+
+- deletep(): This function deletes a node from the copied list based on the position of the node. The function takes one argument - the position of the node to be deleted. The function traverses the copied list to find the node at the given position and then deletes it.
+
+- copyList(): This function creates a copy of the original list. The function traverses the original list, creates a new node for each activity, and then copies the data into the new node. The function then links the new nodes to create a copy of the list.
+
+- idx(): This function assigns a serial number to each node of the linked list based on the order in which the nodes are inserted, deleted or displayed.
+
+- actselection(): This function implements the activity selection algorithm to find the best activities to be selected. The function takes one argument - the index of the process. The function starts by selecting the first activity in the copied list and then selects all non-overlapping activities after that. It then deletes the selected activities from the copied list and recursively calls itself for the next process.
+
+- display(): This function displays all activities in the linked list.
+
+The main function of the program provides a menu-driven interface to the user. The user can choose to insert a new activity, delete an activity, display all activities, display the best activities to be selected, or exit the program.

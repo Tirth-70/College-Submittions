@@ -1,0 +1,30 @@
+# TCP Chat App
+
+This is a simple TCP chat application built in C language, consisting of two programs - a client and a server. The programs allow multiple clients to connect to a server and communicate with each other through text messages.
+
+## Requirements
+
+- C compiler
+- Linux or Unix-based operating system
+
+## Usage
+
+1. Compile the server program with the following command:
+``` gcc tcp_server.c -o server ```
+2. Compile the client program with the following command:
+``` gcc tcp_client.c -o client ```
+3. Start the server by running the following command:
+``` ./server ```
+4. Start the client by running the following command:
+``` ./client ```
+5. Enter a name when prompted on the client terminal, and start sending messages to other connected clients.
+
+## How it works
+
+The server program creates a socket and listens for incoming connections from clients. When a client connects, a child process is forked to handle the communication with that client. The server receives messages from a client and broadcasts it to all the other connected clients. If a client sends an exit command, the server disconnects that client from the chat.
+
+The client program creates a socket and connects to the server. The client sends its name to the server, and starts sending and receiving messages. If the client sends an exit command, it disconnects from the server and exits the program.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

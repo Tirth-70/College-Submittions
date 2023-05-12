@@ -1,0 +1,25 @@
+* How to Run the code :
+
+Step 1 :- 
+    Run the command ‘gcc -v’ to check if you have a compiler installed. If not you need to download a gcc compiler and install it. You can search for cmd/terminal in your windows/mac system to open the command prompt then redirect to your file where the program is available
+
+Step 2 :-
+    Open two windows of cmd/terminal side by side run this command on both the windows "gcc E-Dsystem.c -w" to compile the code and then for Windows - {'E-Dsystem.c'} and mac - {'clang E-Dsystem.c -o E-Dsystem'} run this code to run the program.
+
+Step 3 :-
+    As now both the program are being run, Enter 2nd windows public key to 1st window and visa versa - This will implement RSA and gives the same private key
+
+Step 4 :-
+    Choose one of the window to write the message and receive in another; In first one you'll get a long string of numbers copy that string and paste in the second one you'll get the same message which means all the process is gone the way it should be and the code works perfectly
+
+* Note : You can run the same code in two different devices for receiving and write the message.
+
+* Working of code :
+
+    This is a C program for encrypting and decrypting messages using the RSA algorithm. It first generates a random value 'a', which will be used in the encryption and decryption process. Then it creates a public key by taking 2 to the power of 'a' and computing the modulus 13. It then asks the user to enter the received public key and uses it to calculate the private key using 'a' and modulus 13.
+
+    The program then gives the user the option to either send a message or receive a message. If the user chooses to send a message, they will be prompted to enter their message as a string. The program will then encrypt the message using the private key generated earlier, with each character in the message converted to an ASCII value and added to the private key. The resulting encrypted message is then displayed as a series of integers.
+
+    If the user chooses to receive a message, they will be prompted to enter the encrypted message as a string of integers. The program then divides the string into pairs of characters and converts each pair into an integer. If the integer is between 10 and 20, it combines it with the next character to form a three-digit integer, since each character in the message was converted to two digits. The program then subtracts the private key from each integer to decrypt the message, converts the resulting integers back into characters using ASCII values, and displays the decrypted message.
+
+    If the user enters an invalid choice, the program displays an error message.

@@ -1,0 +1,16 @@
+* Working of the code :
+
+This is a C program that implements a doubly linked list to manage a list of employees with their information such as ID, name, department, designation, salary, and phone number. The program presents a menu to the user with several options to create, display, insert, and delete nodes in the list.
+
+The program starts by declaring a global variable "count" to keep track of the number of nodes in the list and a structure called "node" to define the structure of each node in the list. The node structure contains several fields to store the employee information such as ID, name, department, designation, salary, phone number, and pointers to the previous and next nodes in the list.
+
+The program provides several functions to operate on the doubly linked list:
+
+- create(): creates a new node and prompts the user to enter the employee information.
+- insertbeg(): inserts a node at the beginning of the list.
+- insertend(): inserts a node at the end of the list.
+- displaybeg(): displays the contents of the list from the beginning.
+- deletebeg(): deletes a node from the beginning of the list.
+- deleteend(): deletes a node from the end of the list.
+
+The main() function presents a menu to the user with several options to create, display, insert, and delete nodes in the list based on the user's choice. The program runs in an infinite loop until the user chooses to exit the program.
